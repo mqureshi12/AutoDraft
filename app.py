@@ -13,7 +13,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/analyze', methods=['GET','POST'])
+@app.route('/input', methods=['GET','POST']) #named the form route input instead of analysis
 def analyze():
     if request.method == 'POST':
         rawtext = request.form['rawtext']

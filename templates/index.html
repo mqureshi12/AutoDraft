@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>AutoDraft</title>
     <meta name="description">
-    <link rel="icon" href="img/icon.png" sizes="32x32" type="image/png">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="../img/icon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="../static/css/custom.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/aos.css">
 </head>
@@ -72,6 +73,16 @@
             </div>
         </div>
     </div>
+    <div>
+        Text is below
+        <form method="POST" action="/input">
+            <textarea name="rawtext" cols="3" rows="5" class="form-control" required="true" placeholder="Enter Text Here"></textarea>
+            <br>
+            <button class="btn btn-small" type="reset">Clear</button>
+            <button class="btn btn-small" type="submit">Summarize</button>
+        </form>
+    </div>
+    <div>{{final_summary}}</div>
 
     <script src="js/aos.js"></script>
     <script>
