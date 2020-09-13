@@ -4,7 +4,7 @@ from flask import Flask,url_for,render_template,request
 from spacy_summarization import text_summarizer #this text_summarizer is the function name on the spazy_summarization file
 # Other Pkgs
 import spacy
-nlp = spacy.load('en')
+nlp = spacy.load('en_core_web_sm')
 # not adding web scrapping pkgs because we aren't going to use the document feature
 
 app = Flask(__name__)
